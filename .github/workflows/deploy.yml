@@ -24,12 +24,5 @@ jobs:
     - name: Build project
       run: npm run build
 
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        branch: gh-pages
-        folder: public
-        token: ${{ secrets.GITHUB_TOKEN }}
-
     - name: Pass API Key to the Build
       run: echo "API_KEY=${{ secrets.GOOGLE_SHEETS_API_KEY }}" >> $GITHUB_ENV
