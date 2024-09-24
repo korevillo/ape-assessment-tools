@@ -1,0 +1,61 @@
+/*Text --------------------------------------*/
+
+h1 {
+    font-family: 'Karla';
+}
+
+h2 {
+    font-family: 'Karla';
+}
+
+h3 {
+    font-family: 'Karla';
+}
+
+label {
+    font-family: 'Karla';
+}
+
+a {
+    font-family: 'Karla';
+}
+
+
+p {
+    font-family: 'Karla';
+}
+
+li {
+    font-family: 'Karla';
+}
+
+
+/*Interactive elements --------------------------------------*/
+
+button {
+    font-family: 'Karla';
+}
+
+input {
+    font-family: 'Karla';
+}
+
+
+/*Layout --------------------------------------*/
+.layout{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    gap: 5%;
+}
+
+.sidebar{
+    flex: 1;
+    position: sticky;
+}
+
+.card-container{
+    flex: 2;
+}

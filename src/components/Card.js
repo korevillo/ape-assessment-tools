@@ -54,8 +54,14 @@ function Card({ data }) {
       <p><strong>Standardization </strong> {standardizationType}</p>
       <p><strong>Focus Areas </strong> {focusAreas.join(', ')}</p>
       <p><strong>Ambulation Type </strong> {ambulationTypes.join(', ')}</p>
+      
+      {/*Fix render if type is N/A*/}
       <p><strong>Reference Type </strong> {referenceType}</p>
+
+      {/*Fix render if time is N/A*/}
       <p><strong>Time to Administer </strong> {timeToAdminister} minutes</p>
+
+      {/*Fix render if cost is N/A*/}
       <p><strong>Cost </strong> {cost}</p>
       <a href={link} target="_blank" rel="noopener noreferrer">View Assessment</a>
     </div>

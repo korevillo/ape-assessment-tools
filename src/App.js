@@ -3,6 +3,7 @@ import Filter from './components/Filter';
 import Card from './components/Card';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import './App.css';
 
 function App() {
   const [data, setData] = useState([]); // All data from Google Sheets
@@ -139,6 +140,7 @@ function App() {
         <div className="sidebar">
           <Header />
           <Filter filters={filters} setFilters={setFilters} clearFilters={clearFilters} />
+          <Footer />
         </div>
         <div className="card-container">
           {filteredData.map((row, index) => (
@@ -146,7 +148,6 @@ function App() {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
