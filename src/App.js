@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import Collapsible from 'react-collapsible';
+
 import Filter from './components/Filter';
 import Card from './components/Card';
 import Header from './components/Header';
-import Footer from './components/Footer';
+import Contributors from './components/Contributors';
+import Mandates from './components/Mandates';
+
+
 import './App.css';
+
 
 function App() {
   const [data, setData] = useState([]); // All data from Google Sheets
@@ -140,7 +146,8 @@ function App() {
         <div className="sidebar">
           <Header />
           <Filter filters={filters} setFilters={setFilters} clearFilters={clearFilters} />
-          <Footer />
+          <Collapsible trigger="Individuals with Disabilities Education Act"> <Mandates /> </Collapsible>
+          <Collapsible trigger="Our Contributors"> <Contributors /> </Collapsible>
         </div>
         <div className="card-container">
           {filteredData.map((row, index) => (
