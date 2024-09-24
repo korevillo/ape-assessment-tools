@@ -25,10 +25,6 @@ p {
     font-family: 'Karla';
 }
 
-li {
-    font-family: 'Karla';
-}
-
 
 /*Interactive elements --------------------------------------*/
 
@@ -38,6 +34,15 @@ button {
 
 input {
     font-family: 'Karla';
+}
+
+li {
+    font-family: 'Karla';
+}
+
+.Collapsible {
+    font-family: 'Karla';
+    font-weight: bold;
 }
 
 
