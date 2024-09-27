@@ -40,10 +40,41 @@ li {
     font-family: 'Karla';
 }
 
+/*Collapsibles --------------------------------------*/
+
 .Collapsible {
     font-family: 'Karla';
 }
 
+.Collapsible h1 {
+    font-size: large;
+}
+
+.Collapsible h2 {
+    font-size: medium;
+}
+
+/*Filter  --------------------------------------*/
+
+.filter-container {
+    font-family: 'Karla';
+    display: flex;
+    flex-direction: column;
+    gap: .5rem
+}
+
+.filter-container h1 {
+    font-size: large;
+}
+
+.filter-container category {
+    font-weight: bold;
+}
+
+.filter-container .checks {
+    display: flex;
+    flex-direction: column;
+}
 
 
 /*Layout --------------------------------------*/
@@ -59,8 +90,16 @@ li {
 .sidebar{
     flex: 1;
     position: sticky;
+    height: 100vh;
 }
 
 .card-container{
     flex: 2;
+    height: 100vh;
+    overflow: auto;
 }
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+

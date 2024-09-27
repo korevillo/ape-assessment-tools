@@ -146,8 +146,8 @@ function App() {
         <div className="sidebar">
           <Header />
           <Filter filters={filters} setFilters={setFilters} clearFilters={clearFilters} />
-          <Collapsible trigger="Individuals with Disabilities Education Act"> <Mandates /> </Collapsible>
-          <Collapsible trigger="Our Contributors"> <Contributors /> </Collapsible>
+          <Collapsible trigger="Individuals with Disabilities Education Act" triggerStyle={{fontSize: 'large', fontWeight: 'bold', background: 'black', color: 'white'}}> <Mandates /> </Collapsible>
+          <Collapsible trigger="Our Contributors" triggerStyle={{fontSize: 'large', fontWeight: 'bold', background: 'black', color: 'white'}}> <Contributors /> </Collapsible>
         </div>
         <div className="card-container">
           {filteredData.map((row, index) => (

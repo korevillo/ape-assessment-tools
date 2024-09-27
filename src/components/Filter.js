@@ -20,9 +20,10 @@ function Filter({ filters, setFilters, clearFilters }) {
 
   return (
     <div className="filter-container">
+      <h1>Filter</h1>
       {/* Age Filter */}
       <div>
-        <label>Age: </label>
+        <category>Age: </category>
         <input
           type="number"
           name="age"
@@ -32,8 +33,8 @@ function Filter({ filters, setFilters, clearFilters }) {
       </div>
 
       {/* Standardization Type Filter */}
-      <div>
-        <label>Standardization Type: </label>
+      <div className='checks'>
+        <category>Standardization Type: </category>
         <label>
           <input
             type="checkbox"
@@ -57,8 +58,8 @@ function Filter({ filters, setFilters, clearFilters }) {
       </div>
 
       {/* Focus Areas Filter */}
-      <div>
-        <label>Focus Areas: </label>
+      <div className='checks'>
+        <category>Focus Areas: </category>
         <label>
           <input
             type="checkbox"
@@ -142,8 +143,8 @@ function Filter({ filters, setFilters, clearFilters }) {
       </div>
 
       {/* Ambulation Type Filter */}
-      <div>
-        <label>Ambulation Type: </label>
+      <div className='checks'>
+        <category>Ambulation Type: </category>
         <label>
           <input
             type="checkbox"
@@ -177,8 +178,8 @@ function Filter({ filters, setFilters, clearFilters }) {
       </div>
 
       {/* Reference Type Filter */}
-      <div>
-        <label>Reference Type: </label>
+      <div className='checks'>
+        <category>Reference Type: </category>
         <label>
           <input
             type="checkbox"
