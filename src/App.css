@@ -67,16 +67,12 @@ li {
     padding: 1%;
 
     color: white;
-    font-weight: bold;
+    font-weight: normal;
     transition-duration: 500ms;
 }
 
 .Collapsible__trigger:hover {
     background-color: var(--cardButtonHoverColor);
-}
-
-.Collapsible__trigger.is-closed {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
 }
 
 .Collapsible__contentInner {
@@ -102,7 +98,7 @@ li {
 
 .filter-container h1 {
     font-size: medium;
-    background: var(--cardButtonColor);
+    background: var(--cardButtonHoverColor);
     color:white;
     padding: 1%;    
 }

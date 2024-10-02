@@ -145,7 +145,6 @@ function App() {
       <div className="layout">
         <div className="sidebar">
           <Header />
-          <Filter filters={filters} setFilters={setFilters} clearFilters={clearFilters} />
           <div className='Collapsibles'>
           <Collapsible
               trigger={
@@ -179,6 +178,8 @@ function App() {
             > 
             <Contributors /> 
           </Collapsible>
+          <Filter filters={filters} setFilters={setFilters} clearFilters={clearFilters} />
+
           </div>
         </div>
         <div className="card-container">
