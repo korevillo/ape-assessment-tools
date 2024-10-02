@@ -1,7 +1,17 @@
+/*Color palette -----------------------------*/
+:root {
+    --cardLabelColor: black;
+    --cardButtonColor: #345995;
+    --cardButtonHoverColor: #253F6A;
+    --cardBackgroundColor: #D2DDEF;
+    color: var(--cardButtonHoverColor);
+}
+
 /*Text --------------------------------------*/
 
 h1 {
     font-family: 'Karla';
+    font-size: x-large;
 }
 
 h2 {
@@ -60,7 +70,7 @@ li {
     font-family: 'Karla';
     display: flex;
     flex-direction: column;
-    gap: .5rem
+    gap: .5rem;
 }
 
 .filter-container h1 {
@@ -103,3 +113,35 @@ li {
     display: none;
 }
 
+.card {
+    padding: 5%;
+    padding-top: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-style: auto;
+    border-radius: 16px;
+    background-color: var(--cardBackgroundColor);
+}
+
+.card h3 {
+    font-size: x-large;
+}
+
+.card strong {
+    
+}
+
+.card a {
+    background-color: var(--cardButtonColor);
+    padding: 1% 2% 1% 2%;
+    border-radius: 8px;
+
+    transition-duration: 500ms;
+
+    color: white;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background-color: var(--cardButtonHoverColor);
+}
