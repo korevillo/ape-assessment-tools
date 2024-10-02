@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import Collapsible from 'react-collapsible';
+
 import Filter from './components/Filter';
 import Card from './components/Card';
 import Header from './components/Header';
-import Footer from './components/Footer';
+import Contributors from './components/Contributors';
+import Mandates from './components/Mandates';
+
+
+import './App.css';
+
 
 function App() {
   const [data, setData] = useState([]); // All data from Google Sheets
@@ -139,6 +146,40 @@ function App() {
         <div className="sidebar">
           <Header />
           <Filter filters={filters} setFilters={setFilters} clearFilters={clearFilters} />
+          <div className='Collapsibles'>
+          <Collapsible
+              trigger={
+                <div style={{ display: "flex", justifyContent: "space-between" }}>
+                  <span>Individuals with Disabilities Education Act</span>
+                  <span>+</span> {/* Plus icon for closed state */}
+                </div>
+              }
+              triggerWhenOpen={
+                <div style={{ display: "flex", justifyContent: "space-between" }}>
+                  <span>Individuals with Disabilities Education Act</span>
+                  <span>−</span> {/* Minus icon for open state */}
+                </div>
+              }
+            > 
+            <Mandates /> 
+          </Collapsible>
+          <Collapsible
+              trigger={
+                <div style={{ display: "flex", justifyContent: "space-between" }}>
+                  <span>Our Contributors</span>
+                  <span>+</span> {/* Plus icon for closed state */}
+                </div>
+              }
+              triggerWhenOpen={
+                <div style={{ display: "flex", justifyContent: "space-between" }}>
+                  <span>Our Contributors</span>
+                  <span>−</span> {/* Minus icon for open state */}
+                </div>
+              }
+            > 
+            <Contributors /> 
+          </Collapsible>
+          </div>
         </div>
         <div className="card-container">
           {filteredData.map((row, index) => (
@@ -146,7 +187,6 @@ function App() {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

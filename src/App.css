@@ -1,0 +1,174 @@
+/*Color palette -----------------------------*/
+:root {
+    --cardButtonColor: #345995;
+    --cardButtonHoverColor: #253F6A;
+    --cardBackgroundColor: #D2DDEF;
+    color: var(--cardButtonHoverColor);
+}
+
+/*Text --------------------------------------*/
+
+h1 {
+    font-family: 'Karla';
+    font-size: x-large;
+    width: 100%;
+}
+
+h2 {
+    font-family: 'Karla';
+}
+
+h3 {
+    font-family: 'Karla';
+}
+
+label {
+    font-family: 'Karla';
+}
+
+a {
+    font-family: 'Karla';
+}
+
+
+p {
+    font-family: 'Karla';
+}
+
+
+/*Interactive elements --------------------------------------*/
+
+button {
+    font-family: 'Karla';
+}
+
+input {
+    font-family: 'Karla';
+}
+
+li {
+    font-family: 'Karla';
+}
+
+/*Collapsibles --------------------------------------*/
+.Collapsibles {
+    margin-top: 5%;
+}
+
+.Collapsible {
+    font-family: 'Karla';
+}
+
+.Collapsible__trigger {
+    width: 100%;
+    background-color: var(--cardButtonColor);
+    display: block;
+
+    padding: 1%;
+
+    color: white;
+    font-weight: bold;
+    transition-duration: 500ms;
+}
+
+.Collapsible__trigger:hover {
+    background-color: var(--cardButtonHoverColor);
+}
+
+.Collapsible__trigger.is-closed {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+}
+
+.Collapsible__contentInner {
+    margin-bottom: 5%;
+}
+
+.Collapsible h1 {
+    font-size: large;
+}
+
+.Collapsible h2 {
+    font-size: medium;
+}
+
+/*Filter  --------------------------------------*/
+
+.filter-container {
+    font-family: 'Karla';
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.filter-container h1 {
+    font-size: medium;
+    background: var(--cardButtonColor);
+    color:white;
+    padding: 1%;    
+}
+
+.filter-container category {
+    font-weight: bold;
+}
+
+.filter-container .checks {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Layout --------------------------------------*/
+.layout{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    gap: 5%;
+}
+
+.sidebar{
+    flex: 1;
+    position: sticky;
+    height: 100vh;
+}
+
+.card-container{
+    flex: 2;
+    height: 100%;
+    overflow: scroll;
+    height: 160vh;
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    padding: 5%;
+    padding-top: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-style: auto;
+    border-radius: 16px;
+    background-color: var(--cardBackgroundColor);
+}
+
+.card h3 {
+    font-size: x-large;
+}
+
+.card a {
+    background-color: var(--cardButtonColor);
+    padding: 1% 2% 1% 2%;
+    border-radius: 8px;
+
+    transition-duration: 500ms;
+
+    color: white;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background-color: var(--cardButtonHoverColor);
+}
