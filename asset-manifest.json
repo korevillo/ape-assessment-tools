@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ape-assessment-tools/static/css/main.1052b018.css",
+    "main.js": "/ape-assessment-tools/static/js/main.fce6ff8c.js",
+    "static/js/453.abea35ac.chunk.js": "/ape-assessment-tools/static/js/453.abea35ac.chunk.js",
+    "index.html": "/ape-assessment-tools/index.html",
+    "main.1052b018.css.map": "/ape-assessment-tools/static/css/main.1052b018.css.map",
+    "main.fce6ff8c.js.map": "/ape-assessment-tools/static/js/main.fce6ff8c.js.map",
+    "453.abea35ac.chunk.js.map": "/ape-assessment-tools/static/js/453.abea35ac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1052b018.css",
+    "static/js/main.fce6ff8c.js"
+  ]
+}
