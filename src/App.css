@@ -1,6 +1,5 @@
 /*Color palette -----------------------------*/
 :root {
-    --cardLabelColor: black;
     --cardButtonColor: #345995;
     --cardButtonHoverColor: #253F6A;
     --cardBackgroundColor: #D2DDEF;
@@ -12,6 +11,7 @@
 h1 {
     font-family: 'Karla';
     font-size: x-large;
+    width: 100%;
 }
 
 h2 {
@@ -51,9 +51,36 @@ li {
 }
 
 /*Collapsibles --------------------------------------*/
+.Collapsibles {
+    margin-top: 5%;
+}
 
 .Collapsible {
     font-family: 'Karla';
+}
+
+.Collapsible__trigger {
+    width: 100%;
+    background-color: var(--cardButtonColor);
+    display: block;
+
+    padding: 1%;
+
+    color: white;
+    font-weight: bold;
+    transition-duration: 500ms;
+}
+
+.Collapsible__trigger:hover {
+    background-color: var(--cardButtonHoverColor);
+}
+
+.Collapsible__trigger.is-closed {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+}
+
+.Collapsible__contentInner {
+    margin-bottom: 5%;
 }
 
 .Collapsible h1 {
@@ -74,7 +101,10 @@ li {
 }
 
 .filter-container h1 {
-    font-size: large;
+    font-size: medium;
+    background: var(--cardButtonColor);
+    color:white;
+    padding: 1%;    
 }
 
 .filter-container category {
@@ -105,8 +135,9 @@ li {
 
 .card-container{
     flex: 2;
-    height: 100vh;
-    overflow: auto;
+    height: 100%;
+    overflow: scroll;
+    height: 160vh;
 }
 
 .card-container::-webkit-scrollbar {
@@ -125,10 +156,6 @@ li {
 
 .card h3 {
     font-size: x-large;
-}
-
-.card strong {
-    
 }
 
 .card a {

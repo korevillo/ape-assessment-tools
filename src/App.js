@@ -146,8 +146,40 @@ function App() {
         <div className="sidebar">
           <Header />
           <Filter filters={filters} setFilters={setFilters} clearFilters={clearFilters} />
-          <Collapsible trigger="Individuals with Disabilities Education Act" triggerStyle={{fontSize: 'large', fontWeight: 'bold', background: 'black', color: 'white'}}> <Mandates /> </Collapsible>
-          <Collapsible trigger="Our Contributors" triggerStyle={{fontSize: 'large', fontWeight: 'bold', background: 'black', color: 'white'}}> <Contributors /> </Collapsible>
+          <div className='Collapsibles'>
+          <Collapsible
+              trigger={
+                <div style={{ display: "flex", justifyContent: "space-between" }}>
+                  <span>Individuals with Disabilities Education Act</span>
+                  <span>+</span> {/* Plus icon for closed state */}
+                </div>
+              }
+              triggerWhenOpen={
+                <div style={{ display: "flex", justifyContent: "space-between" }}>
+                  <span>Individuals with Disabilities Education Act</span>
+                  <span>−</span> {/* Minus icon for open state */}
+                </div>
+              }
+            > 
+            <Mandates /> 
+          </Collapsible>
+          <Collapsible
+              trigger={
+                <div style={{ display: "flex", justifyContent: "space-between" }}>
+                  <span>Our Contributors</span>
+                  <span>+</span> {/* Plus icon for closed state */}
+                </div>
+              }
+              triggerWhenOpen={
+                <div style={{ display: "flex", justifyContent: "space-between" }}>
+                  <span>Our Contributors</span>
+                  <span>−</span> {/* Minus icon for open state */}
+                </div>
+              }
+            > 
+            <Contributors /> 
+          </Collapsible>
+          </div>
         </div>
         <div className="card-container">
           {filteredData.map((row, index) => (
